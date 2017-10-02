@@ -1,0 +1,162 @@
+<!DOCTYPE html>	
+<html>
+<head>  
+	<link  rel="stylesheet" href="contacts.css" />	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpeg" href="my_img.jpeg">
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="gpa_calc.js"></script>
+    
+	<title> SAI KUMAR </title>
+	
+</head>
+<body>
+
+<div class="container-fluid">
+	<ul id="for_ul">
+	<div class="row">
+        <div class="col-md-2"><li class="lia">A02UPPALA</li></div>
+		<div class="col-md-3"><li><a class="lia" href="uppala_saikumar.html"><i class="fa fa-home"></i> <strong>HOME </strong></a></li></div>
+		<div class="col-md-4"><li class="active" ><a class="lia" href="gpa_calc.html"><i class="fa fa-calculator"></i><strong>GPA CALCULATOR</strong> </a></li></div>
+		<div class="col-md-3"><li><a class="lia" href="contacts.html"><i class="fa fa-phone"></i><strong>CONTACT</strong> </a></li></div>
+	</div>
+    </ul>
+    <div class="row">
+     <div class="col-md-3"></div>
+    <div class="col-md-6">
+<form id="line">
+        <header> <h1 id="col"><strong>GPA CALCULATOR</strong></h1></header><br>
+        <div>
+        <table >
+        <tr>
+            <th id="temp1">S.No</th>
+            <th id="temp1"> Course Name(optional)</th>
+            <th id="temp1">Grade</th> 
+            <th id="temp1">Credits</th>
+           
+        </tr>
+        <tr>
+            <td class="temp"> 1.</td>
+            <td> 
+                <select id="textbox1" class="fitt">
+                <option value="oops">JAVA</option>
+                <option value="web-apps">WEB-APPlICATIONS</option>
+                <option value="dbms">Data Base Management Systems</option>
+                
+              </select>
+            </td>
+            <td> 
+                <select  id="textbox2" class="fitt">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>   
+                    <option value="E">D</option>
+                    <option value="E">E</option>
+                    
+                   
+                </select>
+            </td>
+            <td> <input type="text" name="credits1" id="textbox3" placeholder="Enter the credits">  </td>
+        </tr>
+        <tr>
+                <td class="temp"> 2.</td>
+                <td> 
+                        <select id="textbox4" class="fitt">
+                        <option value="web-apps">WEB-APPlICATIONS</option>
+                        <option value="oops">JAVA</option>
+                        <option value="dbms">Data Base Management Systems</option>
+                        
+                      </select>
+                    </td>
+                <td> 
+                        <select  id="textbox5" class="fitt">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>  
+                            <option value="E">D</option> 
+                            <option value="E">E</option>
+                            
+                        </select>
+                    </td>
+                <td> <input type="text" name="credits2" id="textbox6" placeholder="Enter the credits">  </td>
+        </tr>
+        <tr>
+                <td class="temp"> 3.</td>
+                <td> 
+                        <select id="textbox1" class="fitt">
+                        <option value="dbms">Data Base Management Systems</option>
+                        <option value="oops">JAVA</option>
+                        <option value="web-apps">WEB-APPlICATIONS</option>
+                        
+                        
+                      </select>
+                    </td>
+                <td> 
+                        <select  id="textbox8" class="fitt">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="E">D</option>   
+                            <option value="E">E</option>
+                            
+                        </select>
+                    </td>
+                <td> <input type="text" name="credits3" id="textbox9" placeholder="Enter the credits">  </td>
+        </tr>
+        </table> 
+        </div>
+        
+        <br><br>
+        <button type="button" onclick="gpa()">Calculate GPA</button><br><br>
+        <table>
+        <tr>
+         <td>   
+        <label class="box"><b><strong> Your result will be displayed here</strong></b></label></td>
+        <td><input type="text" name="result" id="textbox10" placeholder="your GPA is"></td>
+        </tr>
+        </table>
+        <br>
+        <button type="button" onclick="reload()">Recalculate</button><br>
+
+      </form> 
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    <br>
+    <br>
+    <div class="row" >
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                        <p id="contact">Contact me @ </p>
+            </div>
+            <div class="col-md-4">
+            </div>	
+        </div>
+        
+
+    <div class="row" >
+    <div class="forlinks">
+    <div class="col-md-2">
+            <i class="fa fa-github"></i><a class="font" target="blanck" href="https://github.com/S530489">github</a>
+        </div>
+        <div class="col-md-3">
+            <i  class="fa fa-bitbucket"></i><a class="font" target="blanck" href="https://bitbucket.org/S530489/">bitbucket</a>
+        </div>
+        <div class="col-md-3">
+            <i class="fa fa-facebook"></i><a class="font" target="blanck" href="https://www.facebook.com/uppalasaikumar">Face book</a>
+        </div>
+        <div class="col-md-2">
+            <i  class="fa fa-linkedin"></i><a class="font" target="blanck" href=https://www.linkedin.com//>linkedin</a>
+        </div>
+        <div class="col-md-2">
+                <i  class="fa fa-envelope"></i><a class="font" href="mailto:S530489@nwmissouri.edu">Email Id</a>
+        </div>
+    </div>	
+    </div>
+</body>
+</html>
