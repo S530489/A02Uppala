@@ -4,6 +4,7 @@ function gpa(){
     testing_credits($('#textbox3').val(),$('#textbox6').val(),$('#textbox9').val())
     var total_credits= parseInt($('#textbox3').val())+parseInt($('#textbox6').val())+parseInt($('#textbox9').val());
     var result= (gained_credits*3)/total_credits;
+    result=result.toFixed(2);
     $('#textbox10').val(result);
     //document.getElementById('textbox10').value=result;
 }
